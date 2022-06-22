@@ -1,0 +1,80 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-image: url(../img/banner.jpg);
+    background-repeat: no-repeat;
+    background-color: black;
+    height: 80vh;
+    text-align: center;
+    width: 100%;
+}
+
+header h1 {
+    font-size: 80px;
+    width: 50%;
+    padding-left: 25%;
+    padding-right: 25%;
+    /* margin-left: 25%;
+    margin-right: 25%; */
+    padding-top: 30vh;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* the below code didn't afect the height of the navigation bar at all -->> li a*/
+
+/* nav {
+    height: 25px;
+} */
+
+li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    height: 25px;
+}
+
+li a:hover {
+    background-color: rgb(92, 91, 91);
+}
+
+li {
+    float: left;
+    width: 20%;
+    text-align: center;
+  }
+
+article h3 {
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 3%;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.container div {
+    width: 500px;
+    margin: 8%;
+    margin-top: 2%;
+}
+
+.container img {
+    width: 500px;
+}
+
+#testimonials {
+    text-align: center;
+    line-height: 400%;
+}
