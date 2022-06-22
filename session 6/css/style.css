@@ -2,10 +2,24 @@ body {
     background-color: black;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0.00;
 }
+
+/* header styling */
+
+/* #banner {
+    background-image: url(../img/banner.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: black;
+    height: 80vh;
+    text-align: center;
+    width: 100%;
+} */
 
 header {
     background-image: url(../img/banner.jpg);
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-color: black;
     height: 80vh;
@@ -13,44 +27,90 @@ header {
     width: 100%;
 }
 
+nav {
+    background-image: url(../img/banner.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: black;
+    height: 50px;
+    text-align: center;
+    width: 100%;
+}
+
 header h1 {
     font-size: 80px;
+    position: absolute;
     width: 50%;
     padding-left: 25%;
     padding-right: 25%;
-    /* margin-left: 25%;
-    margin-right: 25%; */
-    padding-top: 30vh;
+    padding-top: 239.1955px;
+    padding-bottom: 239.1955px;
+    margin-top: 0.00;
 }
 
-ul {
+/* end header styling */
+
+/* navigation bar styling */
+
+/* ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    height: 50px;
 }
-
-/* the below code didn't afect the height of the navigation bar at all -->> li a*/
-
-/* nav {
-    height: 25px;
-} */
 
 li a {
     display: block;
     text-decoration: none;
     color: white;
-    height: 25px;
+    height: 50px;
+    border-color: white;
+    border-style: inset;
+    border: 5;
 }
 
 li a:hover {
-    background-color: rgb(92, 91, 91);
+    background-color: lightgray;
+    color: black;
 }
 
 li {
     float: left;
     width: 20%;
     text-align: center;
-  }
+    height: 50px;
+    vertical-align: middle;
+  } */
+
+/* nav {
+    overflow: hidden;
+} */
+
+nav a {
+    float: left;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    display: block;
+    width: 20%;
+    padding: 16px 0px;
+    font-weight: bold;
+    height: 18;
+}
+
+nav a:hover {
+    background-color: lightgray;
+    color: black;
+}
+
+nav {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    height: 50;
+}
+
+/* end navigation bar styling */
 
 article h3 {
     text-align: center;
@@ -73,6 +133,8 @@ article h3 {
 .container img {
     width: 500px;
 }
+
+/* end article styling */
 
 #testimonials {
     text-align: center;
