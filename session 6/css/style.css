@@ -7,84 +7,38 @@ body {
 
 /* header styling */
 
-/* #banner {
+#banner {
     background-image: url(../img/banner.jpg);
+    background-position: top -80px left;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-color: black;
-    height: 80vh;
+    height: 588.188px;
     text-align: center;
-    width: 100%;
-} */
-
-header {
-    background-image: url(../img/banner.jpg);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-color: black;
-    height: 80vh;
-    text-align: center;
-    width: 100%;
+    width: 100vw;
 }
 
 nav {
-    background-image: url(../img/banner.jpg);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-color: black;
     height: 50px;
-    text-align: center;
-    width: 100%;
+    padding-top: 0vh;
+}
+
+header {
+    height: 538.188px;
 }
 
 header h1 {
     font-size: 80px;
     position: absolute;
     width: 50%;
-    padding-left: 25%;
-    padding-right: 25%;
-    padding-top: 239.1955px;
-    padding-bottom: 239.1955px;
+    padding: 177.1px 25%;
     margin-top: 0.00;
+    margin-bottom: 50;
 }
 
 /* end header styling */
 
 /* navigation bar styling */
-
-/* ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    height: 50px;
-}
-
-li a {
-    display: block;
-    text-decoration: none;
-    color: white;
-    height: 50px;
-    border-color: white;
-    border-style: inset;
-    border: 5;
-}
-
-li a:hover {
-    background-color: lightgray;
-    color: black;
-}
-
-li {
-    float: left;
-    width: 20%;
-    text-align: center;
-    height: 50px;
-    vertical-align: middle;
-  } */
-
-/* nav {
-    overflow: hidden;
-} */
 
 nav a {
     float: left;
@@ -112,10 +66,16 @@ nav {
 
 /* end navigation bar styling */
 
+/* article styling */
+
 article h3 {
     text-align: center;
-    margin-top: 10%;
-    margin-bottom: 3%;
+    font-size: 40px;
+    padding: 30px 0px;
+}
+
+.descr h4 {
+    padding: 12px 0px;
 }
 
 .container {
@@ -124,14 +84,28 @@ article h3 {
     flex-wrap: wrap;
 }
 
+#reverse {
+    flex-wrap: wrap-reverse;
+}
+
 .container div {
     width: 500px;
     margin: 8%;
     margin-top: 2%;
+    text-align: justify;
 }
 
 .container img {
     width: 500px;
+    transition: transform .5s;
+}
+
+.container img:hover {
+    transform: scale(1.3);
+}
+
+.container .descr {
+    vertical-align: middle;
 }
 
 /* end article styling */
