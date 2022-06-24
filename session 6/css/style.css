@@ -1,3 +1,5 @@
+/* body styling */
+
 body {
     background-color: black;
     color: white;
@@ -5,51 +7,53 @@ body {
     margin: 0.00;
 }
 
+/* end body styling */
+
 /* header styling */
+
+#banner header {
+    height: 65vh;
+    text-align: center;
+    position: relative;
+    margin: 0;
+}
+
+h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 10vh;
+    margin: 0;
+}
 
 #banner {
     background-image: url(../img/banner.jpg);
-    background-position: top -80px left;
+    background-position: top -120px left;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-color: black;
-    height: 588.188px;
-    text-align: center;
-    width: 100vw;
-}
-
-nav {
-    height: 50px;
-    padding-top: 0vh;
-}
-
-header {
-    height: 538.188px;
-}
-
-header h1 {
-    font-size: 80px;
-    position: absolute;
-    width: 50%;
-    padding: 177.1px 25%;
-    margin-top: 0.00;
-    margin-bottom: 50;
 }
 
 /* end header styling */
 
-/* navigation bar styling */
+/* nav bar styling */
+
+nav {
+    height: 5vh;
+}
 
 nav a {
+    display: block;
+    height: 2vh;
     float: left;
     text-decoration: none;
+    width: 20%;
     text-align: center;
     color: white;
-    display: block;
-    width: 20%;
-    padding: 16px 0px;
-    font-weight: bold;
-    height: 18;
+    font-size: 2vh;
+    padding: 1.5vh 0vw;
+    overflow: hidden;
 }
 
 nav a:hover {
@@ -57,21 +61,14 @@ nav a:hover {
     color: black;
 }
 
-nav {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    height: 50;
-}
-
-/* end navigation bar styling */
+/* end nav bar styling */
 
 /* article styling */
 
 article h3 {
     text-align: center;
     font-size: 40px;
-    padding: 30px 0px;
+    padding: 45px 0px;
 }
 
 .descr h4 {
@@ -82,6 +79,7 @@ article h3 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    padding: 10px;
 }
 
 #reverse {
@@ -104,13 +102,15 @@ article h3 {
     transform: scale(1.3);
 }
 
-.container .descr {
-    vertical-align: middle;
-}
+/* how to vertically align .descr h4 and .descr p to the middle of .descr? */
 
 /* end article styling */
+
+/* footer styling */
 
 #testimonials {
     text-align: center;
     line-height: 400%;
 }
+
+/* end footer styling */
