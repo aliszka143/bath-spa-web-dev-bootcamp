@@ -1,0 +1,69 @@
+/* homepage styling */
+
+/* navbar styling */
+
+.navbar-default .navbar-brand {
+    background-color: #CB4335;
+    color: #f8f8f8;
+}
+
+.navbar {
+    margin-bottom: 0;
+    border: 0;
+}
+
+.btn {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+/* carousel styling */
+
+.item, .item-active {
+    height: 95vh;
+}
+
+.carousel-caption h3{
+    font-size: 48px;
+}
+
+.carousel-caption p{
+    font-size: 28px;
+}
+
+#date .carousel-caption, #fun .carousel-caption {
+    top: 20px;
+    text-align: right;
+}
+
+#love .carousel-caption {
+    bottom: 20px;
+    text-align: right;
+}
+
+/* log in page styling */
+
+/* form styling */
+
+.container {
+    margin: 0;
+    width: 100%;
+    height: 95vh;
+    position: relative;
+    color: #f8f8f8;
+}
+
+.container form {
+    padding-left: 25%;
+    padding-right: 25%;
+    padding-top: 15%;
+}
+
+#login {
+    background-image: url(img/login.jpg);
+    /* background-attachment: fixed; */
+    background-position: top -200px left;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: transparent;
+}
