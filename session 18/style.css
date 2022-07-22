@@ -1,0 +1,175 @@
+/* body {
+    background-color: aqua;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: black;
+    }
+  } */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 16px;
+  /* font-family: 'Quicksand', sans-serif; */
+  /* font-family: "Poppins", sans-serif; */
+  font-family: "Montserrat", sans-serif;
+  color: bisque;
+  background-image: url(img/background.png);
+  background-size: auto 100vh;
+  background-position: bottom right;
+  background-attachment: fixed;
+  /* position: fixed; */
+  background-color: black;
+}
+
+/* nav bar styling */
+
+.nav {
+  /* position: absolute; */
+  height: 50px;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  /* width: 100%; */
+}
+
+.nav a {
+  float: left;
+  text-decoration: none;
+  display: block;
+  height: 20px;
+  padding: 15px 0px;
+  width: 33.33%;
+  text-align: center;
+  color: #fcc129;
+}
+
+/* section styling */
+
+hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    rgba(252, 193, 41, 1),
+    rgba(252, 193, 41, 0)
+  );
+}
+
+section {
+  padding: 50px 10.6vw;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: calc(100vh - 100px);
+  scroll-snap-align: start;
+}
+
+.container {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+  scroll-behavior: smooth; /* anchor tags linking to .container children have a smooth scrol effect */
+}
+
+#name {
+  font-weight: 900;
+}
+
+/* headings styling */
+
+section h1 {
+  padding: 3vh 0;
+  color: #fcc129;
+  font-size: 36px;
+  font-weight: 600;
+}
+
+/* about me section */
+
+/* when using media queries and creating the break poits,
+use the following:
+320px - 480 px (mobile): 
+
+
+481px - 768px (tablets):
+?
+
+769px - 1024px (laptop):
+
+#about div {
+    height: 50%;
+    padding: 10px 0;
+}
+
+#about h1 {
+    position: relative;
+    top: 100%;
+    transform: translateY(-100%);
+}
+
+#about p {
+    position: relative;
+    top: 0%;
+}
+
+1025px -> (desktop): 
+?
+*/
+
+#about p {
+    padding: 3vh 0;
+}
+
+#about .top {
+  height: 43%;
+  padding: 10px 0;
+}
+
+#about .bottom {
+  height: 57%;
+  padding: 10px 0;
+}
+
+#about h1 {
+  position: relative;
+  top: 100%;
+  transform: translateY(-100%);
+}
+
+#about p {
+  position: relative;
+  top: 0%;
+}
+
+/* contact section styling */
+
+.email, .phone, .linkedin {
+    padding: 3vh 0;
+}
+
+/* #contact {
+  padding-top: 25vh;
+} */
+
+#contact h1 {
+  position: relative;
+  top: 100%;
+  transform: translateY(-100%);
+}
+
+#contact .top {
+  height: 37%;
+  padding: 10px 0;
+}
+
+#contact .bottom {
+  height: 63%;
+  padding: 10px 0;
+}
